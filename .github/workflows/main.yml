@@ -1,0 +1,13 @@
+name: My first action
+
+on: 
+  push:
+    branches: [ main ]
+
+jobs:
+  react_on_push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print message
+      run: echo "This workflow runs on any push to the main branch"
